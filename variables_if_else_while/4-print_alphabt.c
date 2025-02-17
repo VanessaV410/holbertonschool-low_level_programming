@@ -6,14 +6,13 @@
  */
 int main(void)
 {
-	char alphabet = 'a';
+	char alphabet;
 
-	while (alphabet <= 'z')
+	for (alphabet = 'a' ; alphabet <= 'z' ; alphabet++)
 
 	if (alphabet != 'q' && alphabet != 'e')
 {
 	putchar(alphabet);
-	alphabet++;
 }
 	putchar('\n');
 	return (0);
