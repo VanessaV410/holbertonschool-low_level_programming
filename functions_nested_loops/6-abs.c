@@ -10,9 +10,9 @@ int _abs(int n)
 	{
 		n = _abs(0);
 	}
-	else if (n >= 1)
+	else if (n == -1)
 	{
-		n = _abs(1);
+		n = _abs(-1);
 	}
 	return (0);
 }
