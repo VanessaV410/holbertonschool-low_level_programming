@@ -1,20 +1,35 @@
 #include "main.h"
 /**
- * times_table - prints every minute of the day.
+ * times_table - prints the 9 times table, starting with 0.
  *
  *
  * Return: Always 0.
  */
 void times_table(void)
 {
-	int n, x;
-	int mul;
+	int n, x, mul;
+
 
 		for (n = 0 ; n <= 9 ; n++)
 		{
-			x = 9;
-			mul = x * n;
-		}
-			_putchar(mul + '0');
+			_putchar ('0');
+
+			for (x = 0; x <= 9 ; x++)
+			{
+			_putchar(' ');
+			_putchar(',');
+
+			mul = n * x;
+
+			if (mul <= 9)
+				_putchar(' ');
+
+			else
+				_putchar((mul / 10) + '0');
+
+			_putchar((mul % 10) + '0');
+			}
+
 			_putchar('\n');
+		}
 }
