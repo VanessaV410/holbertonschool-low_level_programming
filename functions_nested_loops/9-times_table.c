@@ -17,7 +17,6 @@ void times_table(void)
 			for (x = 0; x <= 9 ; x++)
 			{
 			_putchar(' ');
-			_putchar(',');
 
 			mul = n * x;
 
